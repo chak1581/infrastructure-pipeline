@@ -11,7 +11,7 @@ node('linux') {
        sh "aws ec2 run-instances --image-id ami-013be31976ca2c322 --count 1 \
 	   --instance-type t2.micro \
 	   --key-name mykeypair \
-	   --security-group-ids sg-070e4f8ea1bc2c01f --subnet-id subnet-0ca72a22 \
+	   --security-group-ids sg-e7c4f8ab --subnet-id subnet-0ca72a22 \
 	   --region us-east-1"
     }
 }
